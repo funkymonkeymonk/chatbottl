@@ -1,4 +1,6 @@
 # Chatbottl
-_www.chatbottl.com_
+_Easy to deploy chatbots - www.chatbottl.com_
 
-Let's get this show on the road.
+ Chatbottls are easy to deploy chatbots. The goal of chatbottls is to give you a
+ quality chat bot deployment, without having to figure out what that looks like.
+ Check out www.chatbottl.com for instructions on how to deploy these containers.
