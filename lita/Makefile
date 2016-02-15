@@ -24,10 +24,7 @@ build: pull
 	@docker build -t $(repo_name)/$(project_name) .
 
 run: build
-	@docker run -it -P --rm \
-		-h $(project_name) \
-		--name $(project_name)_run \
-		$(repo_name)/$(project_name)
+	@docker-compose up
 
 # test your application (tests in the tests/ directory)
 test: build

@@ -1,7 +1,7 @@
 FROM ruby:2.3
 MAINTAINER Will Weaver <monkey@buildingbananas.com>
 
-ADD Gemfile /usr/src/app/
+ADD start-lita.sh /usr/src/app/start-lita
+RUN chmod +x /usr/src/app/start-lita
 WORKDIR /usr/src/app
-RUN bundle
-ENTRYPOINT lita
+CMD /usr/src/app/start-lita

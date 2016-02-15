@@ -1,0 +1,12 @@
+lita:
+  build: .
+  ports:
+   - "5000:5000"
+  environment:
+   - GEMFILE=https://raw.githubusercontent.com/funkymonkeymonk/chatbottl/master/lita/test/test-resources/Gemfile.test
+   - LITA_CONFIG=https://raw.githubusercontent.com/funkymonkeymonk/chatbottl/master/lita/test/test-resources/lita-config.test
+   - LITA_SLACK_TOKEN=${LITA_SLACK_TOKEN}
+  links:
+   - redis
+redis:
+  image: redis
