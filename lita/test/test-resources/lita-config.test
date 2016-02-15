@@ -1,0 +1,13 @@
+Lita.configure do |config|
+  config.robot.name = "tester-roboto"
+  config.robot.mention_name = "test"
+
+  config.robot.adapter = :slack
+  config.adapters.slack.token = ENV["LITA_SLACK_TOKEN"]
+  config.adapters.slack.parse = "full"
+
+  config.redis[:host] = "redis"
+
+  config.handlers.karma.cooldown = 300
+  config.handlers.google_images.safe_search = :off
+end
